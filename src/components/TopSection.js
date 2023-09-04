@@ -2,6 +2,7 @@ import { Box, Typography, Avatar, Grid } from '@mui/material';
 import logo from '../assessts/g3z57SXv_400x400.jpg'
 function TopSection() {
   return (
+    <div>
     <Box
       style={{
         width: '100%',
@@ -28,6 +29,7 @@ function TopSection() {
         </Grid>
       </Grid>
     </Box>
+    </div>
   );
 }
 
