@@ -3,7 +3,7 @@ import html2canvas from 'html2canvas';
 import MainPage from './MainPage';
 import {data2} from './Data'
 
-const MyWebpage = () => {
+const MyWebpage = ({startDate, endDate}) => {
   const contentRef = useRef(null);
 
   const handleScreenshot = () => {
@@ -39,7 +39,7 @@ const MyWebpage = () => {
         position: 'absolute', top: '2%', left: '96%',transform: 'translate(-50%, -50%)',}}
         >
         Capture Screenshot</button>
-      <MainPage cardData={data2}/> 
+      <MainPage cardData={data2} startDate={startDate} endDate={endDate}/> 
       </div>
 
     </div>

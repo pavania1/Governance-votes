@@ -3,13 +3,15 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import Button from '@mui/material/Button';
+import dayjs, { Dayjs } from 'dayjs';
+import { Container, Grid, Typography, Box } from '@mui/material';
+import TopSection from './TopSection';
 
-import { Container, Grid, Typography } from '@mui/material';
 
 
-const DateSelector = () => {
-  const [startDate, setStartDate] = useState(null);
-  const [endDate, setEndDate] = useState(null);
+
+const DateSelector = ({setStartDate, setEndDate, startDate, endDate}) => {
+
 
   const handleStartDateChange = (date) => {
     setStartDate(date);
@@ -23,13 +25,7 @@ const DateSelector = () => {
     <Container>
       
       <Grid container spacing={2}>
-        <Grid item xs={12} md={2}>
-          <Button variant="contained" color="primary"
-          style = {{
-            position: 'absolute', top:'2%', left: '90%', transform: 'translate(-50%, -50%)'
-          }}>
-            Save
-          </Button>
+        <Grid item xs={12} md={2} style={{ textAlign: 'right'}}>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DatePicker 
             label="Start Date"
@@ -41,8 +37,9 @@ const DateSelector = () => {
           </LocalizationProvider>
         </Grid>
        
-        <Grid item xs={12} md={2}>
+        <Grid item xs={12} md={2} >
         <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <Box textAlign="left">
           <DatePicker
             label="End Date"
             value={endDate}
@@ -50,6 +47,7 @@ const DateSelector = () => {
             renderInput={(params) => <input {...params.inputProps} />}
             
           />
+          </Box>
 
         </LocalizationProvider> 
         </Grid>
