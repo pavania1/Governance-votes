@@ -4,7 +4,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import Button from '@mui/material/Button';
 
-import { Container, Grid } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 
 
 const DateSelector = () => {
@@ -21,34 +21,37 @@ const DateSelector = () => {
 
   return (
     <Container>
+      
       <Grid container spacing={2}>
-        <Grid item>
+        <Grid item xs={12} md={2}>
+          <Button variant="contained" color="primary"
+          style = {{
+            position: 'absolute', top:'2%', left: '90%', transform: 'translate(-50%, -50%)'
+          }}>
+            Save
+          </Button>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DatePicker 
             label="Start Date"
             value={startDate}
             onChange={handleStartDateChange}
             renderInput={(params) => <input {...params.inputProps} />}
+            
             />
           </LocalizationProvider>
         </Grid>
        
-
+        <Grid item xs={12} md={2}>
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <DatePicker
             label="End Date"
             value={endDate}
             onChange={handleEndDateChange}
             renderInput={(params) => <input {...params.inputProps} />}
+            
           />
 
         </LocalizationProvider> 
-
-       
-        <Grid item>
-          <Button variant="contained" color="primary">
-            Save
-          </Button>
         </Grid>
       </Grid>
     </Container>

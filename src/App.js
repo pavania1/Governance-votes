@@ -7,10 +7,10 @@ function App() {
   console.log(data2)
   return (
     <div>
-   
+   <Date/>
   
     <Screenshot/>
-    <Date/>
+    
     </div>
   );
 }
