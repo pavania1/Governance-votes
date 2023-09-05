@@ -20,19 +20,19 @@ function TopSection({ startDate, endDate }) {
       >
         <Grid container alignItems="center" justifyContent="center" spacing={2} >
           <Grid item style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-            <Avatar alt="LOGO" src={logo} style={{ width: "100px", height: "100px", padding: '0', margin: '0' }} />
+            <Avatar alt="LOGO" src={logo} style={{ width: "80px", height: "80px", padding: '0', margin: '0' }} />
           </Grid>
           <Grid item>
             <Typography variant="h4">|</Typography>
           </Grid>
           <Grid item>
-            <Typography style={{ fontSize: "2rem", fontFamily: "Arial, sans-serif", fontWeight: 'bold' }}>Weekly Governance Votes</Typography>
+            <Typography style={{ fontSize: "2.5rem", fontFamily: "Arial, sans-serif", fontWeight: 'bold' }}>Witval Governance Report</Typography>
           </Grid>
           <Grid item>
             <Typography variant="h4">|</Typography>
           </Grid>
           <Grid item>
-            <Typography style={{ fontSize: "2rem", fontFamily: "Arial, sans-serif", fontWeight: 'bold' }}>
+            <Typography style={{ fontSize: "2.5rem", fontFamily: "Arial, sans-serif", fontWeight: 'bold' }}>
               {formattedStartDate}-{formattedEndDate}
             </Typography>
           </Grid>

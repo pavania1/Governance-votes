@@ -10,7 +10,7 @@ function CustomCard({ data }) {
             <Avatar alt={data.title} src={data.logoSrc} />
           </Grid>
           <Grid item xs={9}>
-            <Typography variant="h6" component="div" style={{fontSize:"1.5rem", fontFamily: "Arial, sans-serif", fontWeight:'bold'}}>
+            <Typography variant="h6" component="div" style={{fontSize:"2rem", fontFamily: "Arial, sans-serif", fontWeight:'bold'}}>
               {data.title}
             </Typography>
           </Grid>
