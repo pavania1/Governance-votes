@@ -2,6 +2,13 @@ import { Card, CardContent, Typography, Avatar, Grid, Box } from '@mui/material'
 import Text from './Text';
 
 function CustomCard({ data }) {
+  const NotVoteids = [];
+  data.randomText.forEach((item,index) => {
+    if (item.yesNo === "-") {
+      NotVoteids.push(item.Proposalid);
+    }
+  });
+  
   return (
     <Card variant="outlined" style={{ width: "550px", margin: '8px', borderRadius:"15px" , padding:"0px" }}>
       <CardContent>
@@ -17,9 +24,17 @@ function CustomCard({ data }) {
         </Grid>
         <Box mt={2}>
           {data.randomText.map((item, index) => (
-            <Text key={index} item={item} />
+            item.yesNo==="-"?null:<Text key={index} item={item} />
           ))}
         </Box>
+        <Grid>
+        {NotVoteids.length > 0 ? (
+            <p>{NotVoteids.join(',')} is/are not voted</p>
+          ) : (
+            <p>All proposals have been voted</p>
+          )}
+      
+        </Grid>
       </CardContent>
     </Card>
   );

@@ -3,7 +3,7 @@ import osmosis from '../assessts/osmosis-logo.png';
 import cosmos from '../assessts/cosmos.png';
 import gravity from '../assessts/gravity_temp_logo.png';
 import lumCard from '../assessts/lum-card.png';
-import next from '../assessts/Untitled.png'
+import Agoric from '../assessts/Agoric.png'
 export const data2 = [
   {
     logoSrc: Stargaze,
@@ -18,6 +18,11 @@ export const data2 = [
         Proposalid: 176,
         text: "Increase Deposit for Proposals to 50000 STARS",
         yesNo: "YES",
+      },
+      {
+        Proposalid: 213,
+        text: "Stargaze integration with Huddle01",
+        yesNo: "-",
       },
     ],
   },
@@ -55,6 +60,21 @@ export const data2 = [
         text: "Lengthen Thirdening and restore Thirdening impact",
         yesNo: "YES",
       },
+      {
+        Proposalid: 611,
+        text: "Expedited: Repair migration for already approval CL pools.",
+        yesNo: "-",
+      },
+      {
+        Proposalid: 613,
+        text: "Routine incentive adjustment for september 2023",
+        yesNo: "-",
+      },
+      {
+        Proposalid: 614,
+        text: "creates superchanged pools: Community Requests",
+        yesNo: "-",
+      }
     ],
   },
   {
@@ -71,10 +91,20 @@ export const data2 = [
         text: "DFract Allocation #36",
         yesNo: "YES",
       },
+      {
+        Proposalid: 74,
+        text: "DFract Allocation #37 ",
+        yesNo: "-",
+      },
+      {
+        Proposalid: 75,
+        text: "DFract Allocation #38",
+        yesNo: "-",
+      },
     ],
   },
   {
-    logoSrc: next,
+    logoSrc: Agoric,
     title: "Agoric",
     randomText: [
       {
@@ -98,6 +128,16 @@ export const data2 = [
         text: "Compensation to cosmos holders",
         yesNo: "NO",
       },
+      {
+        Proposalid: 193,
+        text: "Enchancing Gravity Bridge through AlphaGrowth BD",
+        yesNo: "-",
+      },
+      {
+        Proposalid: 194,
+        text: "Hats.Finance bug Bounty Committee",
+        yesNo: "-",
+      },
     ],
   },
   {
@@ -118,6 +158,16 @@ export const data2 = [
         Proposalid: 801,
         text: "Signalling Proposal - Gravity Dex Liquidity Module Removal",
         yesNo: "YES",
+      },
+      {
+        Proposalid: 819,
+        text: "Re-allocate prop 72 funding from P2p to Neutron",
+        yesNo: "-",
+      },
+      {
+        Proposalid: 821,
+        text: "v12 software upgrade",
+        yesNo: "-",
       },
     ],
   },

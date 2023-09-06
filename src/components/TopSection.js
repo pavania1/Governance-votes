@@ -1,8 +1,5 @@
 import { Box, Typography, Avatar, Grid } from '@mui/material';
-import logo from '../assessts/7m8p1eY__400x400.jpg'
-
-
-
+import logo from '../assessts/vitwit-logo.jpg'
 
 function TopSection({ startDate, endDate }) {
   const formattedStartDate = startDate ? startDate.toLocaleString() : '';
