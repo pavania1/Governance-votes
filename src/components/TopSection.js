@@ -1,5 +1,5 @@
 import { Box, Typography, Avatar, Grid } from '@mui/material';
-import logo from '../assessts/g3z57SXv_400x400.jpg'
+import logo from '../assessts/7m8p1eY__400x400.jpg'
 
 
 
