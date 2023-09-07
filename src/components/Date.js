@@ -19,7 +19,7 @@ const DateSelector = ({setStartDate, setEndDate, startDate, endDate}) => {
   return (
     <Container>
       
-      <Grid container spacing={2}>
+      <Grid container spacing={2} justifyContent="flex-end" style={{marginTop:'2px', padding:'5px 0'}}>
         <Grid item xs={12} md={2} style={{ textAlign: 'right'}}>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DatePicker 

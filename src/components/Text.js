@@ -12,7 +12,7 @@ function Text({ item }) {
         <Typography variant="h6" style={{margin:0,padding:0}}>|</Typography>
       </Grid>
       <Grid item xs={6}>
-        <Typography style={{ wordWrap: 'break-word', width: '240px',fontSize:'20px',margin:0,padding:0 }}>
+        <Typography style={{ wordWrap: 'break-word', width: '300px',fontSize:'20px',margin:0,padding:0 }}>
           {item.text}
         </Typography>
       </Grid>

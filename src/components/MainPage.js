@@ -3,7 +3,7 @@ import CardList from "./CardList";
 
 function MainPage({cardData, startDate, endDate }) {
     return (
-      <div style={{ backgroundColor: "  #e8e8eb" }}>
+      <div style={{ backgroundColor: "  #FFFBE8" }}>
         
         <TopSection startDate={startDate} endDate={endDate} />
         <CardList data={cardData} />
